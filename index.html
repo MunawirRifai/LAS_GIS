@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Gis</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Web<span>Gis</span>.</a>
+
+    <div class="navbar-nav">
+      <a href="#home">home</a>
+      <a href="#about">About</a>
+      <a href="#other">Other</a>
+      <a href="#maps">Maps</a>
+    </div>
+
+
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home">
+    <div class="mask-container">
+      <main class="content">
+        <h1>Museum di <br>Kota<span>Bandung</span></h1>
+      </main>
+    </div>
+  </section>
+  <!-- Hero Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Kota</span> Bandung</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/st.jpg" alt="gedung sate">
+      </div>
+      <div class="content">
+        <h3>Kenapa Kota Bandung?</h3>
+        <p>Bandung, ibu kota Provinsi Jawa Barat, adalah salah satu kota besar di Indonesia dengan sejarah yang kaya dan peran penting dalam perkembangan budaya, pendidikan, dan politik di Indonesia. Kota ini sering disebut sebagai "Paris van Java" karena keindahan dan pesona Eropanya yang kuat pada masa penjajahan Belanda.</p>
+        
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+  <!-- About Section start -->
+  <section id="other" class="about">
+    <h2><span>Museum di</span> Bandung</h2>
+      <div class="chart-container d-flex justify-content-center mt-4">
+        <canvas id="myChart" class="chart"></canvas>
+      </div>
+      <div class="chart-container">
+        <p>Beberapa Daerah di kota bandung yang memiliki lokasi museum paling banyak.</p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+
+  <!-- Contact Section start -->
+  <section id="maps" class="contact">
+    <h2><span>Maps</span></h2>
+    <p>Peta Lokasi Museum yang ada di Kota Bandung
+    </p>
+
+    <div class="row">
+      <iframe
+        src="maps.html"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="width: 100%; height: 600px;">
+    </iframe>
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Other</a>
+      <a href="#contact">Maps</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">sandhikagalih</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+  <script class="char" src="chart.js"></script>
+</body>
+
+</html>
